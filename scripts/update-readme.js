@@ -26,22 +26,22 @@ function parseIndex() {
   let countries = {}
   let languages = {}
   let categories = {}
-  for(let rootItem of root.items) {
+  for (let rootItem of root.items) {
     const playlist = helper.parsePlaylist(rootItem.url)
     const countryName = rootItem.name
     const countryCode = helper.getBasename(rootItem.url).toLowerCase()
     const countryEpg = playlist.header.attrs['x-tvg-url'] ? `<code>${playlist.header.attrs['x-tvg-url']}</code>` : ''
 
-    for(let item of playlist.items) {
-      
+    for (let item of playlist.items) {
+
       // countries
-      if(countries[countryCode]) { 
+      if (countries[countryCode]) {
         countries[countryCode].channels++
       } else {
-        countries[countryCode] = { 
-          country: countryName, 
-          channels: 1, 
-          playlist: `<code>https://iptv-org.github.io/iptv/countries/${countryCode}.m3u</code>`, 
+        countries[countryCode] = {
+          country: countryName,
+          channels: 1,
+          playlist: `<code>https://kacalayar.github.io/iptv/countries/${countryCode}.m3u</code>`,
           epg: countryEpg
         }
       }
@@ -49,26 +49,26 @@ function parseIndex() {
       // languages
       const languageName = item.tvg.language || 'Undefined'
       const languageCode = helper.getISO6391Code(languageName) || 'undefined'
-      if(languages[languageCode]) { 
+      if (languages[languageCode]) {
         languages[languageCode].channels++
       } else {
-        languages[languageCode] = { 
-          language: languageName, 
-          channels: 1, 
-          playlist: `<code>https://iptv-org.github.io/iptv/languages/${languageCode}.m3u</code>` 
+        languages[languageCode] = {
+          language: languageName,
+          channels: 1,
+          playlist: `<code>https://kacalayar.github.io/iptv/languages/${languageCode}.m3u</code>`
         }
       }
 
       // categories
       const categoryName = item.group.title || 'Other'
       const categoryCode = categoryName.toLowerCase()
-      if(categories[categoryCode]) {
+      if (categories[categoryCode]) {
         categories[categoryCode].channels++
       } else {
-        categories[categoryCode] = { 
-          category: categoryName, 
-          channels: 1, 
-          playlist: `<code>https://iptv-org.github.io/iptv/categories/${categoryCode}.m3u</code>` 
+        categories[categoryCode] = {
+          category: categoryName,
+          channels: 1,
+          playlist: `<code>https://kacalayar.github.io/iptv/categories/${categoryCode}.m3u</code>`
         }
       }
     }
@@ -81,11 +81,23 @@ function parseIndex() {
 
 function generateCountriesTable() {
   const table = helper.generateTable(output.countries, {
-    columns: [
-      { name: 'Country', align: 'left' },
-      { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left', nowrap: true },
-      { name: 'EPG', align: 'left' }
+    columns: [{
+        name: 'Country',
+        align: 'left'
+      },
+      {
+        name: 'Channels',
+        align: 'right'
+      },
+      {
+        name: 'Playlist',
+        align: 'left',
+        nowrap: true
+      },
+      {
+        name: 'EPG',
+        align: 'left'
+      }
     ]
   })
 
@@ -94,18 +106,34 @@ function generateCountriesTable() {
 
 function generateLanguagesTable() {
   output.languages.sort((a, b) => {
-    if(a.language === 'Undefined') { return 1 }
-    if(b.language === 'Undefined') { return -1 }
-    if(a.language < b.language) { return -1 }
-    if(a.language > b.language) { return 1 }
+    if (a.language === 'Undefined') {
+      return 1
+    }
+    if (b.language === 'Undefined') {
+      return -1
+    }
+    if (a.language < b.language) {
+      return -1
+    }
+    if (a.language > b.language) {
+      return 1
+    }
     return 0
   })
 
   const table = helper.generateTable(output.languages, {
-    columns: [
-      { name: 'Language', align: 'left' },
-      { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left' }
+    columns: [{
+        name: 'Language',
+        align: 'left'
+      },
+      {
+        name: 'Channels',
+        align: 'right'
+      },
+      {
+        name: 'Playlist',
+        align: 'left'
+      }
     ]
   })
 
@@ -114,18 +142,34 @@ function generateLanguagesTable() {
 
 function generateCategoriesTable() {
   output.categories.sort((a, b) => {
-    if(a.category === 'Other') { return 1 }
-    if(b.category === 'Other') { return -1 }
-    if(a.category < b.category) { return -1 }
-    if(a.category > b.category) { return 1 }
+    if (a.category === 'Other') {
+      return 1
+    }
+    if (b.category === 'Other') {
+      return -1
+    }
+    if (a.category < b.category) {
+      return -1
+    }
+    if (a.category > b.category) {
+      return 1
+    }
     return 0
   })
 
   const table = helper.generateTable(output.categories, {
-    columns: [
-      { name: 'Category', align: 'left' },
-      { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left' }
+    columns: [{
+        name: 'Category',
+        align: 'left'
+      },
+      {
+        name: 'Channels',
+        align: 'right'
+      },
+      {
+        name: 'Playlist',
+        align: 'left'
+      }
     ]
   })
 
