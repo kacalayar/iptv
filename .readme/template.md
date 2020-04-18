@@ -6,15 +6,15 @@ Internet Protocol television (IPTV) is the delivery of television content over I
 
 ## Usage
 
-To watch IPTV you just need to paste this link `https://kacalayar.github.io/iptv/index.m3u` to any player with support M3U-playlists.
+To watch IPTV you just need to paste this link `https://kacalayar.github.io/tv/index.m3u` to any player with support M3U-playlists.
 
 ![VLC Network Panel](preview.png)
 
 Also you can instead use one of these playlists:
 
-- `https://kacalayar.github.io/iptv/index.country.m3u` (grouped by country)
-- `https://kacalayar.github.io/iptv/index.category.m3u` (grouped by category)
-- `https://kacalayar.github.io/iptv/index.language.m3u` (grouped by language)
+- `https://kacalayar.github.io/tv/index.country.m3u` (grouped by country)
+- `https://kacalayar.github.io/tv/index.category.m3u` (grouped by category)
+- `https://kacalayar.github.io/tv/index.language.m3u` (grouped by language)
 
 Or select one of the playlists from the list below.
 
