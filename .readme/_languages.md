@@ -19,7 +19,7 @@
 		<tr><td align="left">Czech</td><td align="right">29</td><td align="left"><code>https://kacalayar.github.io/tv/languages/cs.m3u</code></td></tr>
 		<tr><td align="left">Danish</td><td align="right">14</td><td align="left"><code>https://kacalayar.github.io/tv/languages/da.m3u</code></td></tr>
 		<tr><td align="left">Dutch</td><td align="right">78</td><td align="left"><code>https://kacalayar.github.io/tv/languages/nl.m3u</code></td></tr>
-		<tr><td align="left">English</td><td align="right">721</td><td align="left"><code>https://kacalayar.github.io/tv/languages/en.m3u</code></td></tr>
+		<tr><td align="left">English</td><td align="right">720</td><td align="left"><code>https://kacalayar.github.io/tv/languages/en.m3u</code></td></tr>
 		<tr><td align="left">Estonian</td><td align="right">3</td><td align="left"><code>https://kacalayar.github.io/tv/languages/et.m3u</code></td></tr>
 		<tr><td align="left">Faroese</td><td align="right">2</td><td align="left"><code>https://kacalayar.github.io/tv/languages/fo.m3u</code></td></tr>
 		<tr><td align="left">Finnish</td><td align="right">3</td><td align="left"><code>https://kacalayar.github.io/tv/languages/fi.m3u</code></td></tr>
@@ -31,10 +31,9 @@
 		<tr><td align="left">Hindi</td><td align="right">181</td><td align="left"><code>https://kacalayar.github.io/tv/languages/hi.m3u</code></td></tr>
 		<tr><td align="left">Hungarian</td><td align="right">21</td><td align="left"><code>https://kacalayar.github.io/tv/languages/hu.m3u</code></td></tr>
 		<tr><td align="left">Icelandic</td><td align="right">5</td><td align="left"><code>https://kacalayar.github.io/tv/languages/is.m3u</code></td></tr>
-		<tr><td align="left">Indonesian</td><td align="right">97</td><td align="left"><code>https://kacalayar.github.io/tv/languages/id.m3u</code></td></tr>
+		<tr><td align="left">Indonesian</td><td align="right">105</td><td align="left"><code>https://kacalayar.github.io/tv/languages/id.m3u</code></td></tr>
 		<tr><td align="left">Italian</td><td align="right">166</td><td align="left"><code>https://kacalayar.github.io/tv/languages/it.m3u</code></td></tr>
 		<tr><td align="left">Japanese</td><td align="right">28</td><td align="left"><code>https://kacalayar.github.io/tv/languages/ja.m3u</code></td></tr>
-		<tr><td align="left">Javanese</td><td align="right">3</td><td align="left"><code>https://kacalayar.github.io/tv/languages/jv.m3u</code></td></tr>
 		<tr><td align="left">Kazakh</td><td align="right">13</td><td align="left"><code>https://kacalayar.github.io/tv/languages/kk.m3u</code></td></tr>
 		<tr><td align="left">Khmer</td><td align="right">25</td><td align="left"><code>https://kacalayar.github.io/tv/languages/km.m3u</code></td></tr>
 		<tr><td align="left">Kinyarwanda</td><td align="right">5</td><td align="left"><code>https://kacalayar.github.io/tv/languages/rw.m3u</code></td></tr>
@@ -72,6 +71,6 @@
 		<tr><td align="left">Ukrainian</td><td align="right">130</td><td align="left"><code>https://kacalayar.github.io/tv/languages/uk.m3u</code></td></tr>
 		<tr><td align="left">Urdu</td><td align="right">27</td><td align="left"><code>https://kacalayar.github.io/tv/languages/ur.m3u</code></td></tr>
 		<tr><td align="left">Vietnamese</td><td align="right">70</td><td align="left"><code>https://kacalayar.github.io/tv/languages/vi.m3u</code></td></tr>
-		<tr><td align="left">Undefined</td><td align="right">146</td><td align="left"><code>https://kacalayar.github.io/tv/languages/undefined.m3u</code></td></tr>
+		<tr><td align="left">Undefined</td><td align="right">156</td><td align="left"><code>https://kacalayar.github.io/tv/languages/undefined.m3u</code></td></tr>
 	</tbody>
 </table>
