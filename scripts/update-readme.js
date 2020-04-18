@@ -41,7 +41,7 @@ function parseIndex() {
         countries[countryCode] = {
           country: countryName,
           channels: 1,
-          playlist: `<code>https://kacalayar.github.io/iptv/countries/${countryCode}.m3u</code>`,
+          playlist: `<code>https://kacalayar.github.io/tv/countries/${countryCode}.m3u</code>`,
           epg: countryEpg
         }
       }
@@ -55,7 +55,7 @@ function parseIndex() {
         languages[languageCode] = {
           language: languageName,
           channels: 1,
-          playlist: `<code>https://kacalayar.github.io/iptv/languages/${languageCode}.m3u</code>`
+          playlist: `<code>https://kacalayar.github.io/tv/languages/${languageCode}.m3u</code>`
         }
       }
 
@@ -68,7 +68,7 @@ function parseIndex() {
         categories[categoryCode] = {
           category: categoryName,
           channels: 1,
-          playlist: `<code>https://kacalayar.github.io/iptv/categories/${categoryCode}.m3u</code>`
+          playlist: `<code>https://kacalayar.github.io/tv/categories/${categoryCode}.m3u</code>`
         }
       }
     }
