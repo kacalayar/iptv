@@ -30,10 +30,6 @@ Or select one of the playlists from the list below.
 
 #include "./.readme/\_countries.md"
 
-## Resources
-
-You can find links to various IPTV related resources in this repository [kacalayar/awesome-iptv](https://github.com/kacalayar/awesome-iptv).
-
 ## Contribution
 
 Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before making a pull request.
